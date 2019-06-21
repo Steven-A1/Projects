@@ -1,4 +1,4 @@
-#Canvas Analyzer Documentation
+# Canvas Analyzer Documentation
 
 ## Summary
 canvas_analyzer.py is the file I worked on to gather information from Canvas, a Learning Management System that gives students access to information on their courses.
