@@ -1,0 +1,307 @@
+
+<!-- saved from url=(0049)http://www2.stat.duke.edu/~mc301/data/movies.html -->
+<html class=" js rgba hsla textshadow opacity svg"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="./Rotten Tomatos vs. IMDB  – Mine Çetinkaya-Rundel_files/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="./Rotten Tomatos vs. IMDB  – Mine Çetinkaya-Rundel_files/academicons.css">
+<title>movies.RData – Mine Çetinkaya-Rundel</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="movies.RData – Mine Çetinkaya-Rundel">
+<meta property="og:description" content="### Get the dataTwo options listed below:1. Click *here* to download the dataset.2. Alternatively, use the following ...">
+<meta property="og:url" content="https://stat.duke.edu/~mc301/data/movies">
+<meta property="og:site_name" content="Mine Çetinkaya-Rundel">
+
+
+<link href="https://stat.duke.edu/~mc301/feed.xml" type="application/atom+xml" rel="alternate" title="Mine Çetinkaya-Rundel Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Type -->
+<link rel="stylesheet" href="./Rotten Tomatos vs. IMDB  – Mine Çetinkaya-Rundel_files/css" type="text/css">
+<link href="./Rotten Tomatos vs. IMDB  – Mine Çetinkaya-Rundel_files/css(1)" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="./Rotten Tomatos vs. IMDB  – Mine Çetinkaya-Rundel_files/entypo.css" media="all">
+
+<!-- In order to use Calendas Plus, you must first purchase it. Then, create a font-face package using FontSquirrel.
+<link rel='stylesheet' href='https://stat.duke.edu/~mc301/assets/cal.css' media='all' />
+-->
+
+
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="./Rotten Tomatos vs. IMDB  – Mine Çetinkaya-Rundel_files/i.css">
+
+<!-- Fresh Squeezed jQuery -->
+
+<script id="twitter-wjs" src="./Rotten Tomatos vs. IMDB  – Mine Çetinkaya-Rundel_files/widgets.js.download"></script><script src="./Rotten Tomatos vs. IMDB  – Mine Çetinkaya-Rundel_files/jquery.min.js.download"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="./Rotten Tomatos vs. IMDB  – Mine Çetinkaya-Rundel_files/modernizr-2.6.2.custom.min.js.download"></script>
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="https://stat.duke.edu/~mc301/favicon.ico">
+
+</head><body class=""><div id="bump">
+  
+    <header class="site-header darken">
+      <div class="wrap">
+        <hgroup>
+          <h1><a href="https://stat.duke.edu/~mc301">Mine Çetinkaya-Rundel</a></h1>
+        </hgroup>
+        <a href="http://www2.stat.duke.edu/~mc301/data/movies.html#nav" class="menu"><span class="icons">☰</span></a>
+        <nav role="navigation">
+          <ul>
+            <li>
+              <a href="https://stat.duke.edu/~mc301" title="Mine Çetinkaya-Rundel">Home</a>
+            </li>
+            
+            
+                <li><a href="https://stat.duke.edu/~mc301/news">News</a></li>
+            
+                <li><a href="https://stat.duke.edu/~mc301/teaching">Teaching</a></li>
+            
+                <li><a href="https://stat.duke.edu/~mc301/data">Data</a></li>
+            
+                <li><a href="https://stat.duke.edu/~mc301/projects">Projects</a></li>
+            
+                <li><a href="https://stat.duke.edu/~mc301/talks">Talks</a></li>
+            
+                <li><a href="https://stat.duke.edu/~mc301/publications">Publications</a></li>
+            
+                <li><a href="https://stat.duke.edu/~mc301/MCR_CV.pdf" target="_blank">CV</a></li>
+            
+                <li><a href="https://stat.duke.edu/~mc301/contact">contact</a></li>
+            
+                <li><a href="https://github.com/mine-cetinkaya-rundel" target="_blank"><i class="fa fa-github fa-lg"></i></a></li>
+            
+                <li><a href="https://twitter.com/minebocek" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
+            
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+<section class="article pad-top">
+
+
+
+      <article class="wrap data-dict">
+        <header class="data-dict-header">
+          <hgroup>
+            <h1>movies.RData</h1>
+            <p class="intro"></p>
+
+          </hgroup>
+        </header>
+
+        <h3 id="get-the-data">Get the data</h3>
+
+<p>Two options listed below:</p>
+
+<ol>
+  <li>
+    <p>Click <a href="http://www2.stat.duke.edu/~mc301/data/movies.Rdata" download="movies.Rdata">
+<em>here</em>
+</a> to download the dataset.</p>
+  </li>
+  <li>
+    <p>Alternatively, use the following lines of code to load the data in R using the following:</p>
+  </li>
+</ol>
+
+<div class="highlight">
+    <code>
+    load(url(https://stat.duke.edu/~mc301/data/movies.Rdata))
+    </code>
+</div>
+
+<h3 id="data-description">Data description</h3>
+
+<p>There data were obtained from IMDB and Rotten Tomatoes. The data represent 456 
+randomly sampled movies released between 1972 to 2014 in the Unites States.</p>
+
+<h3 id="codebook">Codebook</h3>
+
+<p>This data frame contains 456 observations (rows), each representing a movie, and 
+27 variables (columns):</p>
+
+<ol>
+  <li>
+    <p><code>title</code>: Title of movie</p>
+  </li>
+  <li>
+    <p><code>audience_score</code>: Audience score on Rotten Tomatoes (response variable)</p>
+  </li>
+  <li>
+    <p><code>type</code>: Type of movie (Documentary, Feature Film, TV Movie)</p>
+  </li>
+  <li>
+    <p><code>genre</code>: Genre of movie (Action &amp; Adventure, Comedy, Documentary, Drama, 
+Horror, Mystery &amp; Suspense, Other)</p>
+  </li>
+  <li>
+    <p><code>runtime</code>: Runtime of movie (in minutes)</p>
+  </li>
+  <li>
+    <p><code>year</code>: Year the movie is released</p>
+  </li>
+  <li>
+    <p><code>mpaa_rating</code>: MPAA rating of the movie (G, PG, PG-13, R, Unrated)</p>
+  </li>
+  <li>
+    <p><code>studio</code>: Studio that produced the movie</p>
+  </li>
+  <li>
+    <p><code>imdb_num_votes</code>: Number of votes on IMDB</p>
+  </li>
+  <li>
+    <p><code>critics_score</code>: Critics score on Rotten Tomatoes</p>
+  </li>
+  <li>
+    <p><code>critics_rating</code>: Categorical variable for critics rating on Rotten 
+Tomatoes (Certified Fresh, Fresh, Rotten)</p>
+  </li>
+  <li>
+    <p><code>best_pic_nom</code>: Whether or not the movie was nominated for a best 
+picture Oscar (no, yes)</p>
+  </li>
+  <li>
+    <p><code>best_pic_win</code>: Whether or not the movie won a best picture Oscar 
+(no, yes)</p>
+  </li>
+  <li>
+    <p><code>best_actor_win</code>: Whether or not one of the main actors in the movie 
+ever won an Oscar (no, yes) – note that this is not necessarily whether the 
+actor won an Oscar for their role in the given movie</p>
+  </li>
+  <li>
+    <p><code>best_actress win</code>: Whether or not one of the main actresses in the movie 
+ever won an Oscar (no, yes) – not that this is not necessarily whether the 
+actresses won an Oscar for their role in the given movie</p>
+  </li>
+  <li>
+    <p><code>best_dir_win</code>: Whether or not the director of the movie ever won an Oscar 
+(no, yes) – not that this is not necessarily whether the director won an Oscar 
+for the given movie</p>
+  </li>
+  <li>
+    <p><code>top200_box</code>: Whether or not the movie is in the Top 200 Box Office list 
+on BoxOfficeMojo (no, yes)</p>
+  </li>
+  <li>
+    <p><code>audience_rating</code>: Categorical variable for audience rating on Rotten 
+Tomatoes (Spilled, Upright)</p>
+  </li>
+  <li>
+    <p><code>director</code>: Director of the movie</p>
+  </li>
+  <li>
+    <p><code>actor1</code>: First main actor/actress from the abridged cast. This information 
+was used to determine whether the movie casts an actor or actress who won a best 
+actor or actress Oscar.</p>
+  </li>
+  <li>
+    <p><code>actor2</code>: Second main actor/actress from the abridged cast. This information 
+was used to determine whether the movie casts an actor or actress who won a best 
+actor or actress Oscar.</p>
+  </li>
+  <li>
+    <p><code>actor3</code>: Third main actor/actress from the abridged cast. This information 
+was used to determine whether the movie casts an actor or actress who won a best 
+actor or actress Oscar.</p>
+  </li>
+  <li>
+    <p><code>actor4</code>: Fourth main actor/actress from the abridged cast. This information 
+was used to determine whether the movie casts an actor or actress who won a best 
+actor or actress Oscar.</p>
+  </li>
+  <li>
+    <p><code>actor5</code>: Fifth main actor/actress from the abridged cast. This information 
+was used to determine whether the movie casts an actor or actress who won a best 
+actor or actress Oscar.</p>
+  </li>
+  <li>
+    <p><code>imdb_url</code>: Link to IMDB page for the movie</p>
+  </li>
+  <li>
+    <p><code>rt_url</code>: Link to Rotten Tomatoes page for the movie</p>
+  </li>
+  <li>
+    <p><code>imdb_id</code>: IMDB ID of the movie</p>
+  </li>
+</ol>
+
+
+      <a class="share" href="https://twitter.com/intent/tweet?text=%22movies.RData%22%20https://stat.duke.edu/~mc301//data/movies%20via%20@minebocek" data-dnt="true">Share</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+      </article>
+    </section>
+</div>
+
+<div class="push"></div>
+  <footer>
+    <aside class="wrap">
+
+      <ol class="prev-posts">
+        <p class="list-title">Recent Posts</p>
+         <!-- for1 -->
+            <li>
+              <span class="recent-title"><a href="https://stat.duke.edu/~mc301/sta199" title="Sta 199 - Intro to Data Science">Sta 199 - Intro to Data Sci... </a></span>
+              <span class="date">Oct 09, 2017</span>
+            </li>
+         <!-- for1 -->
+            <li>
+              <span class="recent-title"><a href="https://stat.duke.edu/~mc301/ses" title="Duke Statistical Education Summit 2017">Duke Statistical Education ... </a></span>
+              <span class="date">Oct 09, 2017</span>
+            </li>
+         <!-- for1 -->
+            <li>
+              <span class="recent-title"><a href="https://stat.duke.edu/~mc301/asaedchair" title="ASA Section on Statistical Education Chair-Elect">ASA Section on Statistical ... </a></span>
+              <span class="date">May 02, 2017</span>
+            </li>
+        
+      </ol>
+
+      <div class="social">
+        <ul>
+            <li>Contact Me</li>
+
+            <li> <i class="fa fa-envelope"></i>
+              <a id="mail" href="mailto:mine@stat.duke.edu"><span class="foot-link">mine@stat.duke.edu</span></a>
+            </li>
+
+            
+            <li> <i class="fa fa-twitter"></i>
+              <a id="twit" href="http://twitter.com/minebocek" target="_blank"><span class="foot-link">@minebocek</span></a></li>
+            
+
+        </ul>
+    </div>
+    </aside>
+    <small>© 2018 Mine Çetinkaya-Rundel. Powered by <a href="http://jekyllrb.com/">Jekyll</a> using the <a href="http://jekyll.gtat.me/about">Balzac</a> theme. Source on <a href="https://github.com/mine-cetinkaya-rundel/duke_statsci_homepage">GitHub.</a></small>
+  </footer>
+
+  <!-- If they're out, get some from the cellar -->
+  <script>window.jQuery || document.write('<script src="https://stat.duke.edu/~mc301/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+  <script src="./Rotten Tomatos vs. IMDB  – Mine Çetinkaya-Rundel_files/retina.min.js.download"></script>
+
+  <!-- Custom JS -->
+  <script src="./Rotten Tomatos vs. IMDB  – Mine Çetinkaya-Rundel_files/scripts.js.download"></script>
+
+
+  
+
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="./Rotten Tomatos vs. IMDB  – Mine Çetinkaya-Rundel_files/widget_iframe.8a107686fd318b5c68b40d2c2ba1ea37.html" title="Twitter settings iframe" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./Rotten Tomatos vs. IMDB  – Mine Çetinkaya-Rundel_files/saved_resource.html"></iframe></body></html>
